@@ -1,11 +1,13 @@
 name: CodeceptJS Tests
 
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-    
+  # Executa toda vez que tiver um push ou pull_request
+  # push:
+  #   branches: [ main, master ]
+  # pull_request:
+  #   branches: [ main, master ]
+  # Realizar os testes de regressão atraves de um click
+  workflow_dispatch:
 jobs:
   e2e-tests:
     timeout-minutes: 60

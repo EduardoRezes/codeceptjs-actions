@@ -13,6 +13,8 @@ exports.config = {
   helpers: {
     Playwright: {
       url: 'https://loginxp.vercel.app',
+      // treu para execucao de testes assistidas
+      // false para execucao dos testes nao assistida
       show: false,
       browser: 'chromium'
     },
